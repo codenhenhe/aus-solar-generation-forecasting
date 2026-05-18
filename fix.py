@@ -25,7 +25,6 @@ def fix_notebook_widgets(input_path, output_path=None):
         if isinstance(widgets, dict) and "state" not in widgets:
             widgets["state"] = {}
 
-        # Nếu muốn xóa hoàn toàn metadata.widgets thì bỏ comment dòng dưới
         del metadata["widgets"]
 
     nb["metadata"] = metadata
